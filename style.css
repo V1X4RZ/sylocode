@@ -7,7 +7,7 @@ body {
 }
 
 #wrapper {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -42,11 +42,21 @@ nav ul li a {
     font-size: 18px;
     padding: 0px 0px 10px 0;
     transition: .5s ease;
-    border-bottom: 3px solid transparent;
 }
 
-nav ul li a:hover {
-    border-bottom: 3px solid #8113ff;
+nav ul li a:after {
+    content: '';
+    margin: auto;
+    background-color: transparent;
+    height: 3px;
+    display: block;
+    width: 0px;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+    background-color: #8113ff;
 }
 
 .logo {
@@ -65,7 +75,7 @@ nav ul li a:hover {
 /* HEADER */
 
 header {
-    /*height: 80vh;*/
+    height: 70vh;
     text-align: center;
 }
 
@@ -96,6 +106,102 @@ header {
 
 .btn:hover {
     background-color: #4d01a3;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.technologies p {
+    padding: 0px 30px;
+    color: #afafaf;
+}
+
+#about {
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    padding: 10vh 0;
+    background-color: #1d1d1d;
+}
+
+#about h1 {
+    font-size: 35px;
+    border-bottom: 3px solid #8113ff;
+    width: 30vh;
+    padding: 0 0 10px 0;
+    margin: 0 auto 20px auto;
+}
+
+#about p {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#offer {
+    text-align: center;
+    height: 50vh;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#offer h1 {
+    font-size: 35px;
+    border-bottom: 3px solid #8113ff;
+    width: 30vh;
+    padding: 0 0 10px 0;
+    margin: 10vh auto 20px auto;
+}
+
+#offer p {
+    margin: 20px auto 50px auto;
+    width: 50%;
+}
+
+.offer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5vh 0;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.offer-item span {
+    font-size: 50px;
+}
+
+#contact {
+    text-align: center;
+    height: 40vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1d1d1d;
+}
+
+#contact h1 {
+    font-size: 35px;
+    border-bottom: 3px solid #8113ff;
+    width: 30vh;
+    padding: 10vh 0 10px 0;
+    margin: 0 auto 20px auto;
+}
+
+#contact p {
+    margin: 10px auto 5vh auto;
+    width: 50%;
+}
+
+#contact a {
+    margin: 10vh 0;
+}
+
+footer {
+    text-align: center;
 }
 
 /* OTHERS */
