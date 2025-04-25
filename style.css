@@ -264,10 +264,17 @@ footer {
         font-size: 14px;
     }
 
+    #about,
+    #offer,
+    #contact {
+        height: auto;
+        padding: 40px 20px;
+    }
+
     #about p,
     #offer p,
     #contact p {
-        width: 90%;
+        width: 100%;
         font-size: 16px;
     }
 
@@ -276,12 +283,13 @@ footer {
     #contact h1 {
         width: auto;
         font-size: 28px;
+        margin-bottom: 20px;
     }
 
     .offer-items {
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 100%;
     }
 
     .offer-item {
@@ -297,8 +305,10 @@ footer {
         font-size: 16px;
     }
 
-    #contact {
-        height: auto;
+    footer {
+        padding: 20px;
+    }
+}
         padding: 50px 0;
     }
 }
